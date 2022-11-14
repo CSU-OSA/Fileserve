@@ -26,4 +26,4 @@ def create_fastapi() -> FastAPI:
 
 app = create_fastapi()
 if __name__ == '__main__':
-	uvicorn.run(app='main:app', port=1001, reload=True)
+	uvicorn.run(app='main:app', port=cfg.port, reload=True)
